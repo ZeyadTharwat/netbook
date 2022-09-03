@@ -464,14 +464,21 @@ body {
   display: none;
 }
 
+.hero__btns a, .nav__righteye__btn a {
+  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+}
+
 /* NAVBAR */
 .nav__main:hover, .nav__link:hover {
   color: #217BF4;
   transition: all 0.3s ease-in-out;
 }
 
-.nav {
+.main-sec-bg {
   background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -527,7 +534,6 @@ body {
   font-size: 12px;
   font-weight: 600;
   border-radius: 14px;
-  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
 }
 
 .hamburger {
@@ -598,4 +604,78 @@ body {
     display: none;
   }
 }
-/* NAVBAR *//*# sourceMappingURL=main.css.map */
+/* NAVBAR */
+/* HERO SECTION */
+.hero {
+  padding-top: 72px;
+  padding-bottom: 82.5px;
+}
+.hero__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hero__main__title {
+  margin-right: 69px;
+}
+.hero__rectangle {
+  color: #217BF4;
+  padding: 12px 30px 12px 30px;
+  background-color: rgba(33, 123, 244, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 53px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  max-width: 120px;
+}
+.hero__main__title h1 {
+  color: #0A093D;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 66px;
+}
+.hero__paragraph {
+  color: #656464;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 42px;
+}
+.hero__btns {
+  display: flex;
+}
+.hero__btns a {
+  padding: 24px 42px 24px 42px;
+  border-radius: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+}
+.hero__leftbtn {
+  margin-right: 18px;
+  background: #217BF4;
+  color: white;
+}
+.hero__rightbtn {
+  border: 1px solid #217BF4;
+  color: #217BF4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__content img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* HERO SECTION *//*# sourceMappingURL=main.css.map */
