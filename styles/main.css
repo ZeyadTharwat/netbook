@@ -884,6 +884,13 @@ body {
     height: auto;
     margin: 0 0 0 0;
   }
+  .about__img1 {
+    margin-right: 15px;
+  }
+  .about__vid {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
   .about__vid img {
     height: 300px !important;
     width: 100%;
