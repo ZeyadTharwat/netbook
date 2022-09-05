@@ -1,7 +1,9 @@
+/* NAVBAR */
 .main-sec-bg{
     background: $main-sec-gradient;
 }
 .nav{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,25 +44,28 @@
             display: flex;
             align-items: center;
         }
-
-        &__righteye{
-            display: flex;
-            align-items: center;
-            &__search{
-                border-bottom: 1px solid $secondary;
-                margin-right: 42px;
-            }
-            &__search input {
+        &__righteye-search{
+            transform: translateY(7px);
+            border-bottom: 1px solid $secondary;
+            margin-right: 42px;
+            input {
+                margin-bottom: 18px;
                 border: none;
                 background-color: transparent;
                 resize: none;
                 outline: none;
                 max-width: 105px;
-                margin-bottom: 18px;
                 font-size: 14px;
                 font-weight: 400;
-            }          
-            &__btn a{
+            }              
+        }
+
+        &__righteye{
+            display: flex;
+            align-items: center;
+        }
+        &__btn {
+            a{
                 background-color: $blue;
                 padding: 18px 44px 18px 44px;
                 color:white;
@@ -68,8 +73,9 @@
                 font-weight: 600;
                 border-radius: 14px;
                 @extend %blueshadow
-                        }
-        }
+    
+            }
+                    }
 
 }
 .hamburger {
@@ -88,7 +94,6 @@
 
 @media only screen and (max-width: $medium) {
     .nav {
-
         &__menu {
             position: fixed;
             left: -100%;
@@ -117,10 +122,11 @@
         }
         &__menu.active {
             left: 0;
+            position: absolute;
         }
     
         &__item {
-            margin: 2.5rem 0;
+            margin: 1.5rem 0;
             text-align: center;
         }
     
@@ -155,7 +161,9 @@
 
 
 @media only screen and (max-width: 890px) {
-    .nav__righteye__search {
+    .nav__righteye-search {
         display: none;
     }
 }
+
+    /* NAVBAR */

@@ -1,0 +1,132 @@
+/* HERO SECTION */
+.hero{
+    padding-top: 72px;
+    padding-bottom:82.5px;
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__main-title{
+        margin-right: 69px;
+    }
+
+    &__rectangle {
+        color:$blue;
+        padding: 12px 30px 12px 30px;
+        background-color: rgb(33, 123, 244,0.1);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-top:53px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        max-width: 120px;
+    }
+
+    &__header {
+        color:$navy;
+        font-size: 56px;
+        font-weight: 700;
+        margin-bottom: 18px;
+        line-height: 66px;
+    }
+
+    &__paragraph {
+        color:$main;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 42px;
+    }
+    &__btns{
+        display: flex;
+    }
+    &__btns a {
+        @extend %blueshadow;
+        padding:24px 42px 24px 42px;
+        border-radius: 14px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        
+    }
+    &__leftbtn{
+        margin-right:18px;
+        background: $blue;
+        color:white;
+    }
+    &__rightbtn{
+        border: 1px solid $blue;
+        color:$blue;
+    }
+}
+
+@media only screen and (max-width: $large) {
+    .hero {
+        padding-left: 30px;
+        padding-right:30px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+        &__content img {
+            width: 100%;
+            height: auto;      
+            }
+        &__img {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: $medium) {
+.hero{
+    padding-top:10px
+}
+}
+
+@media only screen and (max-width: $small) {
+    .hero{
+        padding-top: 0px;
+        
+        &__header {
+            font-size: 38px;
+            line-height: 1;
+        }
+        &__paragraph {
+            font-size: 14px;
+            line-height: normal;
+        }
+        &__btns a {
+            padding:14px 22px 14px 22px;
+            border-radius: 14px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1;
+            
+        }
+    
+    }
+}
+
+@media only screen and (max-width: $xsmall) {
+    .hero{
+        padding-top: 0px;
+        &__rectangle {
+            margin-top: 30px;
+        }
+        &__main-title {
+            margin-right: 0px;
+        }
+        &__header{
+            margin-bottom: 8px;
+        }
+        &__paragraph{
+            margin-bottom: 24px;
+        }
+    }
+}
+/* HERO SECTION */
