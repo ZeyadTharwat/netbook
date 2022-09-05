@@ -6,10 +6,7 @@
 
 @import "layout/header";
 
-@import "components/hero.scss";
-@import "components/about.scss";
-@import "components/achievment.scss";
-
+@import "../pages/home.scss";
 
 
 
@@ -36,6 +33,3 @@
 .hidden{
     display:none;
 }
-
-
-
