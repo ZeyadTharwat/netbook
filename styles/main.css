@@ -464,7 +464,7 @@ body {
   display: none;
 }
 
-.hero__btns a, .nav__righteye__btn a {
+.achievment__btn, .hero__btns a, .nav__righteye__btn a {
   box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
 }
 
@@ -900,11 +900,200 @@ body {
 /*ACHIEVMENT SECTION*/
 .achievment {
   padding-top: 75px;
+  padding-bottom: 130px;
 }
 .achievment__content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+.achievment__card1 {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+  border-radius: 14px;
+  padding: 42px 18px 40px 44px;
+  margin-right: 24px;
+}
+.achievment__rating {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+.achievment__rating img {
+  margin-right: 10px;
+}
+.achievment__rating h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0A093D;
+}
+.achievment__members {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.achievment__members img {
+  margin-right: 16px;
+}
+.achievment__members h1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #217BF4;
+}
+.achievment__members h1 span {
+  font-weight: 500;
+  color: #5D5B70;
+}
+.achievment__paragraph {
+  color: #8C8C8C;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.achievment a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #217BF4;
+}
+.achievment__card2 {
+  border: 1px solid rgba(146, 165, 184, 0.14);
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 42px 18px 40px 44px;
+}
+.achievment__card2 a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #4A4A56;
+}
+.achievment__trophy {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+}
+.achievment__trophy img {
+  margin-right: 10px;
+}
+.achievment__trophy h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0A093D;
+}
+.achievment__github {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.achievment__github img {
+  margin-right: 16px;
+}
+.achievment__github h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #5D5B70;
+}
+.achievment__github h1 span {
+  font-weight: 500;
+  color: #217BF4;
+}
+.achievment__paragraph {
+  color: #8C8C8C;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.achievment__card3 {
+  margin-left: 93px;
+}
+.achievment__btn {
+  padding: 20.6px 37.5px 20.6px 37.5px;
+  background-color: #217BF4;
+  color: white;
+  border-radius: 14px;
+  border: 0px;
+}
+.achievment__btn span {
+  font-size: 14px;
+}
+.achievment__header {
+  color: #0A093D;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 18px;
+}
+.achievment__main-title {
+  color: #217BF4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.achievment__text {
+  padding-bottom: 38px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #656464;
+}
+.achievment__cards {
+  display: flex;
+}
 
+@media only screen and (max-width: 1024px) {
+  .achievment {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .achievment__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .achievment__card3 {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .achievment {
+    padding-top: 0;
+  }
+  .achievment__cards {
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+  }
+  .achievment__card1 {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .achievment__cards {
+    padding: 0 0 0 0;
+  }
+  .achievment__main-title {
+    font-size: 16px;
+  }
+  .achievment__header {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .achievment__text {
+    font-size: 14px;
+    line-height: 1;
+    padding-bottom: 30px;
+  }
+  .achievment__btn {
+    padding: 20px 30px 20px 30px;
+  }
+}
 /*ACHIEVMENT SECTION*//*# sourceMappingURL=main.css.map */
