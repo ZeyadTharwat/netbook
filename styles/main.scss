@@ -1,8 +1,10 @@
-@use 'helpers/variables' as *;
-@use 'base/fonts';
-@use "helpers/normalize";
-@use "base/reset";
-@use "base/typography";
+@import 'helpers/variables';
+@import "helpers/normalize";
+
+
+@import "base/reset";
+@import 'base/fonts';
+@import "base/typography";
 
 @import "layout/header";
 
@@ -17,7 +19,7 @@
 %hover {
     color: $blue;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;    
+    transition: all 0.3s ease-in- out;    
 }
 
 
@@ -33,3 +35,235 @@
 .hidden{
     display:none;
 }
+
+/*FEATURES SECTION*/
+.features{
+    background: $feature-sec-gradient;
+    padding-top: 60px;
+    padding-bottom: 163px;
+    &__content{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__main-title{
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color:$blue;
+    }
+    &__header{
+        color:$navy;
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    &__paragraph{
+        color:$main;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__cards{
+        display: flex;
+        align-items: flex-start;
+        gap: 44px;
+        padding: 0 41px;
+    }
+    &__card-header{
+        margin-top: 6px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color:$purple;
+        margin-bottom: 14px;
+
+    }
+    &__card{
+        flex: 0 1 100%;
+        margin-bottom: 44px;
+        background-color: white;
+        img{
+            margin-right: 36px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color:$main;
+        }
+        display: flex;
+        align-items: flex-start;
+        padding: 40px 65px 44px 40px;
+        box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+        border-radius: 14px;
+    }
+
+}
+@media only screen and (max-width: $large) {
+    .features {
+        &__cards{
+            padding: 0 30px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0;
+        }
+        &__card{
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+            padding: 20px 20px 20px 30px;
+        }
+        &__card-header{
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+/*FEATURES SECTION*/
+
+/*TEAM SECTION*/
+.team{
+    padding-top: 37px;
+    padding-bottom: 130px;
+    &__content{
+        text-align: center;
+        margin-bottom: 38px;
+    }
+    &__main-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color:$blue;
+    }
+    &__header{
+        color:$navy;
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    &__paragraph{
+        color:$main;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__filters{
+        max-width: fit-content;
+        margin-bottom: 44px;
+        a{
+            padding: 20px 50.5px 20px 50.5px;
+            background-color: $blue;
+            color:white;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        align-items: center;
+        padding: 8px 8px 8px 58px; 
+        border-radius: 14px;   
+    background-color: rgb(33, 123, 244,0.06);   
+    }
+    &__filter1{
+        margin-right: 98px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color:$purple;
+        cursor: pointer;
+    }
+    &__filter2{
+        margin-right: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color:$purple;
+        cursor: pointer;
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__card{
+        box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
+        border-radius: 14px;
+        padding: 30px 49px 30px 49px;
+        text-align: center;
+        gap: 30px;
+    }
+    &__card-img{
+        margin-bottom: 29px;
+    }
+    &__card-name{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color:$purple;
+        margin-bottom: 14px;
+    }
+    &__card-id{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color:$main;
+    }
+
+}
+/*TEAM SECTION*/
+
+/*CTA SECTION*/
+.cta{
+    background: $blue-sky;
+    padding-top: 44px;
+    &__text{
+        margin-top: 78px;
+        margin-right: 50px;
+    }
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__main-title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color:$blue;
+        margin-bottom: 10px;
+    }
+    &__header{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color:$navy;
+        margin-bottom: 18px;
+    }
+    &__paragraph{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color:$main;
+        margin-bottom: 36px;
+        margin-right: 55px;
+    }
+    &__apps{
+        display: flex;
+        gap:20px
+    }
+}
+/*CTA SECTION*/
+
