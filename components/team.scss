@@ -26,6 +26,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+        text-align: center;
     }
     &__filter-btn{
         padding: 20px 50.5px 20px 50.5px;
@@ -130,6 +131,9 @@
 }
 @media only screen and (max-width: $xsmall) {
     .team{
+        br{
+            display: none;
+        }
         &__filter-btn{
             padding: 15px 20px 15px 20px;
         }
