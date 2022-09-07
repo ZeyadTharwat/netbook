@@ -1,0 +1,118 @@
+/*FEATURES SECTION*/
+.features{
+    background: $feature-sec-gradient;
+    padding-top: 60px;
+    padding-bottom: 163px;
+    &__content{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__main-title{
+    margin-bottom: 9px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color:$blue;
+    }
+    &__header{
+        color:$navy;
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    &__paragraph{
+        color:$main;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__cards{
+        display: flex;
+        align-items: flex-start;
+        gap: 44px;
+        padding: 0 41px;
+    }
+    &__card-header{
+        margin-top: 6px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color:$purple;
+        margin-bottom: 14px;
+
+    }
+    &__card-img{
+        margin-right: 36px;
+    }
+    &__card-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color:$main;
+    }
+    &__card{
+        flex: 0 1 100%;
+        margin-bottom: 44px;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+        padding: 40px 65px 44px 40px;
+        box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+        border-radius: 14px;
+    }
+
+}
+@media only screen and (max-width: $large) {
+    .features {
+        padding-bottom: 80px;
+        padding-top: 0;
+        &__cards{
+            padding: 0 30px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0;
+        }
+        &__card{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &__card-header{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media only screen and (max-width: $small) {
+    .features {
+        &__card{
+            margin-bottom: 20px;
+            padding: 20px 20px 20px 30px;
+
+        }
+    }
+}
+@media only screen and (max-width: $xsmall) {
+    .features {
+        br{
+            display: none;
+        }
+        &__card{
+            padding: 20px 15px 20px 20px;
+        }
+        &__card-img{
+            margin-right: 15px;
+        }
+        &__card-header{
+            line-height: 1;
+            font-size: 18px;
+        }
+        &__card-text{
+            line-height: 1;
+            font-size: 12px;
+        }
+    }
+
+}
+/*FEATURES SECTION*/

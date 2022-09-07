@@ -1080,27 +1080,6 @@ body {
   }
 }
 /*ACHIEVMENT SECTION*/
-.nav__btn a, .hero__btns a, .achievment__btn {
-  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
-}
-
-.nav__link:hover, .nav__main:hover {
-  color: #217BF4;
-  transition: all 0.3s ease-in- out;
-}
-
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 auto;
-  box-sizing: border-box;
-}
-
-.hidden {
-  display: none;
-}
-
 /*FEATURES SECTION*/
 .features {
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
@@ -1167,6 +1146,7 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .features {
+    padding-bottom: 80px;
     padding-top: 0;
   }
   .features__cards {
@@ -1239,6 +1219,15 @@ body {
   font-size: 16px;
   line-height: 28px;
 }
+.team__filter-btn {
+  padding: 20px 50.5px 20px 50.5px;
+  background-color: #217BF4;
+  color: white;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
 .team__filters {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -1254,15 +1243,6 @@ body {
   padding: 8px 8px 8px 58px;
   border-radius: 14px;
   background-color: rgba(33, 123, 244, 0.06);
-}
-.team__filters a {
-  padding: 20px 50.5px 20px 50.5px;
-  background-color: #217BF4;
-  color: white;
-  border-radius: 14px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
 }
 .team__filter1 {
   margin-right: 98px;
@@ -1281,16 +1261,19 @@ body {
   cursor: pointer;
 }
 .team__cards {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
 }
 .team__card {
   box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
   border-radius: 14px;
   padding: 30px 49px 30px 49px;
   text-align: center;
-  gap: 30px;
 }
 .team__card-img {
   margin-bottom: 29px;
@@ -1309,7 +1292,64 @@ body {
   color: #656464;
 }
 
+@media only screen and (max-width: 1024px) {
+  .team {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .team__filters {
+    padding-left: 30px;
+  }
+  .team__cards {
+    gap: 15px;
+  }
+  .team__filter-btn {
+    padding: 20px 30px 20px 30px;
+    background-color: #217BF4;
+    color: white;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .team__filter1 {
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .team__filter-btn {
+    padding: 15px 20px 15px 20px;
+  }
+  .team__filter1 {
+    margin-right: 30px;
+  }
+  .team__filter2 {
+    margin-right: 10px;
+  }
+}
 /*TEAM SECTION*/
+.nav__btn a, .hero__btns a, .achievment__btn {
+  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+}
+
+.nav__link:hover, .nav__main:hover {
+  color: #217BF4;
+  transition: all 0.3s ease-in- out;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
 /*CTA SECTION*/
 .cta {
   background: #E5F0FD;

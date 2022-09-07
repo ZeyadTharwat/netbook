@@ -1,0 +1,144 @@
+/*TEAM SECTION*/
+.team{
+    padding-top: 37px;
+    padding-bottom: 130px;
+    &__content{
+        text-align: center;
+        margin-bottom: 38px;
+    }
+    &__main-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color:$blue;
+    }
+    &__header{
+        color:$navy;
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+
+    }
+    &__paragraph{
+        color:$main;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__filter-btn{
+        padding: 20px 50.5px 20px 50.5px;
+        background-color: $blue;
+        color:white;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &__filters{
+        max-width: fit-content;
+        margin-bottom: 44px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        align-items: center;
+        padding: 8px 8px 8px 58px; 
+        border-radius: 14px;   
+    background-color: rgb(33, 123, 244,0.06);   
+    }
+    &__filter1{
+        margin-right: 98px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color:$purple;
+        cursor: pointer;
+    }
+    &__filter2{
+        margin-right: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color:$purple;
+        cursor: pointer;
+    }
+    &__cards{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        gap:30px;
+    }
+    &__card{
+        box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
+        border-radius: 14px;
+        padding: 30px 49px 30px 49px;
+        text-align: center;
+    }
+    &__card-img{
+        margin-bottom: 29px;
+    }
+    &__card-name{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        color:$purple;
+        margin-bottom: 14px;
+    }
+    &__card-id{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color:$main;
+    }
+
+}
+@media only screen and (max-width: $large) {
+    .team {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: $small) {
+    .team {
+        &__filters{
+            padding-left: 30px;
+        }
+        &__cards{
+            gap:15px
+        }
+        &__filter-btn{
+            padding: 20px 30px 20px 30px;
+            background-color: $blue;
+            color:white;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__filter1{
+            margin-right: 50px;
+        }
+    }
+}
+@media only screen and (max-width: $xsmall) {
+    .team{
+        &__filter-btn{
+            padding: 15px 20px 15px 20px;
+        }
+        &__filter1{
+            margin-right: 30px;
+        }
+        &__filter2{
+            margin-right: 10px;
+        }
+ 
+    }
+}
+
+/*TEAM SECTION*/
