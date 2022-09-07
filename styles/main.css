@@ -1294,10 +1294,14 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .team {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-left: 30px;
   }
 }
 @media only screen and (max-width: 576px) {
+  .team {
+    padding-bottom: 80px;
+  }
   .team__filters {
     padding-left: 30px;
   }

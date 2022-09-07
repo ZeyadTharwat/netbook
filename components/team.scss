@@ -101,11 +101,13 @@
 }
 @media only screen and (max-width: $large) {
     .team {
-        padding: 0 30px;
+        padding-left:  30px;
+        padding-left:  30px;
     }
 }
 @media only screen and (max-width: $small) {
     .team {
+        padding-bottom: 80px;
         &__filters{
             padding-left: 30px;
         }
