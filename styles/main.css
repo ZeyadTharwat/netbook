@@ -1399,4 +1399,43 @@ body {
   gap: 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .cta {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .cta__content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cta {
+    padding-top: 0;
+  }
+  .cta__mobile {
+    display: none;
+  }
+  .cta__header {
+    line-height: 1;
+    font-size: 30px;
+  }
+  .cta__apps {
+    gap: 10px;
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .cta__paragraph {
+    line-height: 1;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+  .cta__text {
+    font-size: 14px;
+    margin-right: 0;
+  }
+}
 /*CTA SECTION*//*# sourceMappingURL=main.css.map */
