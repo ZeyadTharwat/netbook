@@ -7,6 +7,7 @@
 @import "base/typography";
 
 @import "layout/header";
+@import "layout/footer";
 
 @import "../pages/home.scss";
 
@@ -36,86 +37,132 @@
     display:none;
 }
 
-
-
-/*CTA SECTION*/
-.cta{
-    background: $blue-sky;
-    padding-top: 44px;
-    &__text{
-        margin-top: 78px;
-        margin-right: 50px;
-    }
-    &__content{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+/* NEWS SECTION */
+.news{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    &__content {
+        text-align: center;
+        padding-bottom: 80px;
     }
     &__main-title{
+        color: $blue;
         font-weight: 500;
         font-size: 18px;
         line-height: 18px;
-        color:$blue;
         margin-bottom: 10px;
     }
-    &__header{
+    &__header {
         font-weight: 700;
-        font-size: 36px;
-        line-height: 52px;
-        color:$navy;
-        margin-bottom: 18px;
+font-size: 36px;
+line-height: 36px;
+color:$navy;
     }
-    &__paragraph{
+    &__cards{
+        display: flex;
+        align-items: flex-start;
+        gap:75px;
+    }
+    &__card-imgs{
+        position: relative;
+    }
+    &__card1-net{
+        position: absolute;
+        left:-78px;
+        top:-30px;
+    }
+    &__card3-net{
+        position: absolute;
+        right: -90px;
+        top:96px;
+    }
+    &__card-img{
+        position: relative;
+    }
+    &__card1-content{
+        display: flex;
+         align-items: flex-end;
+    }
+    &__card-text{
+        margin-left: 14px;
+        font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+color:$purple;
+        margin-top: 25px;
+        margin-bottom: 24px;
+    }
+    &__card-link{
+        margin-left: 14px;
         font-weight: 400;
         font-size: 16px;
-        line-height: 26px;
+        line-height: 16px;
         color:$main;
-        margin-bottom: 36px;
-        margin-right: 55px;
-    }
-    &__apps{
-        display: flex;
-        gap:20px
     }
 }
+
 @media only screen and (max-width: $large) {
-    .cta {
-        padding-left: 30px;
-        padding-right: 30px;
-        &__content{
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }    
-     }
+.news{
+    padding-left: 30px;
+    padding-right: 30px;
+    &__cards{
+        flex-direction: column;
+    }
+    &__card{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__card1-content{
+        max-width: fit-content;
+    }
+    }
+}
+@media only screen and (max-width: $small) {
+.news{
+    &__cards{
+    gap:50px
+    }
+}
 }
 @media only screen and (max-width: $xsmall) {
-    .cta {
-        padding-top: 0;
-        &__mobile{
-            display: none;
+    .news{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        &__main-title{
+            font-size: 14px;
         }
         &__header{
-            line-height: 1;
             font-size: 30px;
         }
-        &__apps  {
-            gap:10px;
-            flex-direction: column;
-            width: fit-content;
+        &__content {
+            padding-bottom: 40px;
         }
-        &__paragraph {
-            line-height: 1;
-            margin-bottom:25px;
-            margin-right: 0;
+        &__card-text{
+            max-width: max-content;
         }
-        &__text{
-            font-size: 14px;
-            margin-right: 0;
+        &__card-imgs{
+            img{
+                position: static;
+                width: 100%;
+                height: auto;    
+            }
         }
-    } 
+        &__card3-net{
+            display: none;
+        }
+        &__card1-net{
+            display: none;
+        }
+
+    }
+}
+@media only screen and (max-width: 330px) {
+.news{
+    hr{
+        display: none;
+    }
+}
 }
 
-
-/*CTA SECTION*/
+/* NEWS SECTION */
 
