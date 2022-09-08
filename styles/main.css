@@ -310,6 +310,24 @@ template {
   display: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1025px) and (max-width: 1171px) {
+  .hero__content, .nav, .about__content, .achievment__content, .cta__content, .news, .row, .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 html,
 body,
 div,
@@ -724,6 +742,15 @@ body {
     padding: 10px 5px;
   }
 }
+.achievment__btn, .hero__btns a, .nav__btn a {
+  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+}
+
+.nav__link:hover, .nav__main:hover {
+  color: #217BF4;
+  transition: all 0.3s ease-in- out;
+}
+
 /* HERO SECTION */
 .hero {
   padding-top: 72px;
@@ -1556,27 +1583,6 @@ body {
   }
 }
 /*CTA SECTION*/
-.nav__btn a, .hero__btns a, .achievment__btn {
-  box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
-}
-
-.nav__link:hover, .nav__main:hover {
-  color: #217BF4;
-  transition: all 0.3s ease-in- out;
-}
-
-.container {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 auto;
-  box-sizing: border-box;
-}
-
-.hidden {
-  display: none;
-}
-
 /* NEWS SECTION */
 .news {
   padding-top: 130px;

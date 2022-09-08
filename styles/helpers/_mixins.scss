@@ -1,0 +1,19 @@
+.container{
+    width:100%;
+    max-width: 1170px;
+    margin:0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display:none;
+}
+
+@media (min-width:1025px) and (max-width:1171px){
+    .hero__content , .nav , .about__content , .achievment__content , .cta__content , .news , .row , .footer-bottom{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ }
+ 
